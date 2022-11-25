@@ -1,0 +1,65 @@
+<%- include("header") -%> 
+<ul class="nav justify-content-end">
+    <li class="nav-item">
+        <a class="nav-link" style="color: black;" href="/home">Home</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link " style="color: black;" href="staffview">View Details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: black;" href="staffreg">Registration</a>
+    </li>
+  </ul>
+  <div class="container" id="regform">
+    <div class="title">Employee Information Form</div>
+    <div class="content">
+      <form action="staffreg" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" placeholder="Enter first name" name="fname" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Enter last name" name="lname" required autocomplete="off"> 
+          </div>
+          <div class="input-box">
+            <span class="details">Employee ID</span>
+            <input type="number" placeholder="Enter ID number" name="empid" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Designation</span>
+            <input type="text" placeholder="Enter designation" name="desig" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Qualification</span>
+            <input type="text" placeholder="Enter qualification" name="qual" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Age</span>
+            <input type="number" placeholder="Enter age" name="age" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter email" name="email" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter phone number" name="phno" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter address" name="address" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Joined Date</span>
+            <input type="date" placeholder="Enter joining date" name="jdate" required autocomplete="off">
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+<%- include("footer") -%>

@@ -1,0 +1,86 @@
+<%- include("header") -%> 
+<ul class="nav justify-content-end">
+    <li class="nav-item">
+        <a class="nav-link" style="color: black;" href="/home">Home</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link " style="color: black;" href="patientview">View Details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: black;" href="patientreg">Registration</a>
+    </li>
+  </ul>
+  
+  <div class="container" id="regform">
+    <div class="title">Patient Registration</div>
+    <div class="content">
+      <form action="patientreg" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" placeholder="Enter your first name" name="fname" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Enter your last name" name="lname" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Patient ID</span>
+            <input type="text" placeholder="Enter your ID number" name="pid" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Age</span>
+            <input type="number" placeholder="Enter your age" name="age" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter your email" name="email" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your phone number" name="phno" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your address" name="address" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Postal Code</span>
+            <input type="number" placeholder="Enter your postal code" name="postalcode" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" name="password" required autocomplete="off">
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" required autocomplete="off">
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+<%- include("footer") -%>
